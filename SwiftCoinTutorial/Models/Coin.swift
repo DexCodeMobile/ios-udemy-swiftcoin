@@ -31,14 +31,14 @@ struct Coin: Codable, Identifiable {
     enum CodingKeys: String, CodingKey {
         case id, symbol, name, image
         case currentPrice = "current_price"
-        case marketCap = "market_cap"
+        case priceChange24H = "price_change_24h"
+        case priceChangePercentage24H = "price_change_percentage_24h"
         case marketCapRank = "market_cap_rank"
+        case marketCap = "market_cap"
         case fullyDilutedValuation = "fully_diluted_valuation"
         case totalVolume = "total_volume"
         case high24H = "high_24h"
         case low24H = "low_24h"
-        case priceChange24H = "price_change_24h"
-        case priceChangePercentage24H = "price_change_percentage_24h"
         case marketCapChange24H = "market_cap_change_24h"
         case marketCapChangePercentage24H = "market_cap_change_percentage_24h"
         case circulatingSupply = "circulating_supply"

@@ -25,6 +25,7 @@ struct TopMoversItemView: View {
                 Text(coin.symbol.uppercased())
                     .font(.caption)
                     .fontWeight(.bold)
+                    .foregroundColor(.theme.primaryTextColor)
                 
                 Text(coin.currentPrice.toCurrency())
                     .font(.caption)
@@ -37,7 +38,7 @@ struct TopMoversItemView: View {
                 .foregroundColor(coin.priceChangePercentage24H > 0 ? .green : coin.priceChangePercentage24H == 0 ? .gray : .red)
         }
         .frame(width: 140, height: 140)
-        .background(Color("ItemBackgroundColor"))
+        .background(Color.theme.itemBackgroundColor)
         .overlay(
             RoundedRectangle(cornerRadius: 10)
                 .stroke(Color(.systemGray4), lineWidth: 2)

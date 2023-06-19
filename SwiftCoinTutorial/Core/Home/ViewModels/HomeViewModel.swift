@@ -40,7 +40,7 @@ class HomeViewModel: ObservableObject {
                 }
                 print("DEBUG: Coins \(coins)")
             } catch {
-                print("DEBUG: Failed to decode with error: \(error)")
+                print("DEBUG: [1] Failed to decode with error: \(error)")
             }
         }
         .resume()
