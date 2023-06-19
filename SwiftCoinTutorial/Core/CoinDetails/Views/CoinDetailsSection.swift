@@ -17,7 +17,7 @@ struct CoinDetailsSection: View {
     
     var body: some View {
         VStack {
-            Text("Overview")
+            Text(model.title)
                 .font(.title)
                 .bold()
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -33,6 +33,12 @@ struct CoinDetailsSection: View {
 
 struct CoinDetailsSection_Previews: PreviewProvider {
     static var previews: some View {
-        CoinDetailsSection(model: dev.sectionModel)
+        let sectionModel = CoinDetailsSectionModel(title: "Overview", stats: [
+            dev.stat1,
+            dev.stat2,
+            dev.stat3,
+            dev.stat4
+        ])
+        CoinDetailsSection(model: sectionModel)
     }
 }

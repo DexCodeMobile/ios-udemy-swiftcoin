@@ -27,14 +27,12 @@ struct AllCoinsView: View {
             .foregroundColor(.gray)
             .padding(.horizontal)
             
-            ScrollView {
-                VStack {
-                    ForEach(viewModel.coins) { coin in
-                        NavigationLink {
-                            CoinDetailsView(model: <#T##CoinDetailsSectionModel#>)
-                        } label: {
-                            CoinRowView(coin: coin)
-                        }
+            VStack {
+                ForEach(viewModel.coins) { coin in
+                    NavigationLink {
+                        LazyNavigationView(CoinDetailsView(coin: coin))
+                    } label: {
+                        CoinRowView(coin: coin)
                     }
                 }
             }

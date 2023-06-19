@@ -27,6 +27,12 @@
 		E884B14D2A401D2700119233 /* StatisticModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884B14C2A401D2700119233 /* StatisticModel.swift */; };
 		E884B14F2A401DDD00119233 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884B14E2A401DDD00119233 /* PreviewProvider.swift */; };
 		E884B1512A4022DE00119233 /* CoinDetailsSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884B1502A4022DE00119233 /* CoinDetailsSectionModel.swift */; };
+		E884B1532A40F71400119233 /* CoinDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884B1522A40F71400119233 /* CoinDetailsViewModel.swift */; };
+		E884B1552A4101FA00119233 /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884B1542A4101FA00119233 /* ChartData.swift */; };
+		E884B1572A4104B000119233 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884B1562A4104B000119233 /* Date.swift */; };
+		E884B1592A41065E00119233 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884B1582A41065E00119233 /* ChartView.swift */; };
+		E884B15B2A41168D00119233 /* CustomLoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884B15A2A41168D00119233 /* CustomLoadingIndicator.swift */; };
+		E884B15D2A41184400119233 /* LazyNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E884B15C2A41184400119233 /* LazyNavigationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +56,12 @@
 		E884B14C2A401D2700119233 /* StatisticModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticModel.swift; sourceTree = "<group>"; };
 		E884B14E2A401DDD00119233 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		E884B1502A4022DE00119233 /* CoinDetailsSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailsSectionModel.swift; sourceTree = "<group>"; };
+		E884B1522A40F71400119233 /* CoinDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailsViewModel.swift; sourceTree = "<group>"; };
+		E884B1542A4101FA00119233 /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
+		E884B1562A4104B000119233 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		E884B1582A41065E00119233 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		E884B15A2A41168D00119233 /* CustomLoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoadingIndicator.swift; sourceTree = "<group>"; };
+		E884B15C2A41184400119233 /* LazyNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyNavigationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +118,8 @@
 		E884B1232A3E8E1700119233 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				E884B15A2A41168D00119233 /* CustomLoadingIndicator.swift */,
+				E884B15C2A41184400119233 /* LazyNavigationView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -116,6 +130,7 @@
 				E884B13F2A3EA62B00119233 /* Double.swift */,
 				E884B1462A40183000119233 /* Color.swift */,
 				E884B14E2A401DDD00119233 /* PreviewProvider.swift */,
+				E884B1562A4104B000119233 /* Date.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -123,9 +138,10 @@
 		E884B1282A3E8E2900119233 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E884B1542A4101FA00119233 /* ChartData.swift */,
 				E884B13A2A3E9B7700119233 /* Coin.swift */,
-				E884B14C2A401D2700119233 /* StatisticModel.swift */,
 				E884B1502A4022DE00119233 /* CoinDetailsSectionModel.swift */,
+				E884B14C2A401D2700119233 /* StatisticModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -188,6 +204,7 @@
 		E884B1422A40142200119233 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				E884B1522A40F71400119233 /* CoinDetailsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -198,6 +215,7 @@
 				E884B1482A401AC500119233 /* CoinDetailsSection.swift */,
 				E884B1442A40144D00119233 /* CoinDetailsView.swift */,
 				E884B14A2A401B3B00119233 /* StatisticView.swift */,
+				E884B1582A41065E00119233 /* ChartView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -280,6 +298,7 @@
 			files = (
 				E884B13B2A3E9B7700119233 /* Coin.swift in Sources */,
 				E884B1312A3E8F7900119233 /* TopMoversView.swift in Sources */,
+				E884B15D2A41184400119233 /* LazyNavigationView.swift in Sources */,
 				E884B1352A3E926200119233 /* AllCoinsView.swift in Sources */,
 				E884B14D2A401D2700119233 /* StatisticModel.swift in Sources */,
 				E884B12F2A3E8EBF00119233 /* HomeView.swift in Sources */,
@@ -287,11 +306,16 @@
 				E884B1472A40183000119233 /* Color.swift in Sources */,
 				E884B1182A3E8DDA00119233 /* ContentView.swift in Sources */,
 				E884B14B2A401B3B00119233 /* StatisticView.swift in Sources */,
+				E884B1552A4101FA00119233 /* ChartData.swift in Sources */,
 				E884B1512A4022DE00119233 /* CoinDetailsSectionModel.swift in Sources */,
+				E884B1572A4104B000119233 /* Date.swift in Sources */,
+				E884B1532A40F71400119233 /* CoinDetailsViewModel.swift in Sources */,
 				E884B1452A40144D00119233 /* CoinDetailsView.swift in Sources */,
 				E884B1162A3E8DDA00119233 /* SwiftCoinTutorialApp.swift in Sources */,
+				E884B15B2A41168D00119233 /* CustomLoadingIndicator.swift in Sources */,
 				E884B1372A3E926F00119233 /* CoinRowView.swift in Sources */,
 				E884B1402A3EA62B00119233 /* Double.swift in Sources */,
+				E884B1592A41065E00119233 /* ChartView.swift in Sources */,
 				E884B14F2A401DDD00119233 /* PreviewProvider.swift in Sources */,
 				E884B1332A3E8F8900119233 /* TopMoversItemView.swift in Sources */,
 				E884B1492A401AC500119233 /* CoinDetailsSection.swift in Sources */,

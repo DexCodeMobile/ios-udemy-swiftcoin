@@ -30,7 +30,37 @@ extension Double {
         return currencyFormatter.string(for: self) ?? "$0.00"
     }
     
+    var numberString: String {
+        return String(format: "%.2f", self)
+    }
+    
     var percentage: String {
         return (numberFormatter.string(for: self) ?? "0.00") + "%"
+    }
+    
+    func formattedWithAbbreviations() -> String {
+        let num = abs(Double(self))
+        let sign = (self < 0) ? "-" : ""
+        
+        switch num {
+        case 1_000_000_000_000...:
+            let formatted = num / 1_000_000_000_000
+            let stringFormatted = formatted.numberString
+            return "\(sign)\(stringFormatted)Tr"
+        case 1_000_000_000...:
+            let formatted = num / 1_000_000_000
+            let stringFormatted = formatted.numberString
+            return "\(sign)\(stringFormatted)Bn"
+        case 1_000_000...:
+            let formatted = num / 1_000_000
+            let stringFormatted = formatted.numberString
+            return "\(sign)\(stringFormatted)M"
+        case 1_000...:
+            let formatted = num / 1_000
+            let stringFormatted = formatted.numberString
+            return "\(sign)\(stringFormatted)K"
+        default:
+            return "\(sign)\(numberString)"
+        }
     }
 }
